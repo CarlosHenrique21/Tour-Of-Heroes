@@ -5,6 +5,7 @@ import { HeroDetailComponent } from './components/hero-detail/hero-detail.compon
 import { MaterialModule } from '../material/material.module';
 import { FormsModule } from '@angular/forms';
 import { HeroesRoutingModule } from './heroes-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -15,6 +16,7 @@ import { HeroesRoutingModule } from './heroes-routing.module';
   ],
   imports: [
     CommonModule,
+    FlexLayoutModule,
     FormsModule,
     MaterialModule,
     HeroesRoutingModule,
