@@ -1,24 +1,4 @@
-
-<mat-toolbar color="primary">
-  <span>{{ title }}</span>
-  <span fxFlex></span>
-  <button
-    mat-icon-button
-    matTooltip="Dashboard"
-    aria-label="Dashboard"
-    routerLink="/dashboard"
-    >
-    <mat-icon>dashboard</mat-icon>
-  </button>
-  <button
-    mat-icon-button
-    matTooltip="Heroes"
-    aria-label="Heroes List"
-    routerLink="/heroes"
-    >
-    <mat-icon>bolt</mat-icon>
-  </button>
-</mat-toolbar>
+<app-toolbar [title]="title" [menuItems]="menuItems"></app-toolbar>
 
 <div class="content" fxLayoutGap="12px">
   <router-outlet></router-outlet>
